@@ -92,5 +92,4 @@ Re-arrange the blocks below
 })(); 
 </script>
 
-### Example Next Link
 [Next](./parsons/example1.html)
