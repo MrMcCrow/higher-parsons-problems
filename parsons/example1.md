@@ -44,5 +44,5 @@ title: Page 2
 })(); 
 </script>
 
-[Previous](../../index.markdown)
+[Previous](https://mrmccrow.github.io/higher-parsons-problems/)
 [Next](./example2.html)
