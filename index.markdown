@@ -3,11 +3,11 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-title: Multiple Parson's Problems on One Page
+title: Higher Parson's Problems
 ---
 # Parsons Practice
 
-## First McCrow Test - findMax
+## Standard Algorithms - findMax
 
 <div id="findMax-sortableTrash" class="sortable-code"></div> 
 <div id="findMax-sortable" class="sortable-code"></div> 
