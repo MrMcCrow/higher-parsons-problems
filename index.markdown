@@ -9,24 +9,24 @@ title: Multiple Parson's Problems on One Page
 
 ## First McCrow Test - findMax
 
-<div id="sortableTrash" class="sortable-code"></div> 
-<div id="sortable" class="sortable-code"></div> 
+<div id="findMax-sortableTrash" class="sortable-code"></div> 
+<div id="findMax-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
-    <input id="feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="newInstanceLink" value="Reset Problem" type="button" /> 
+    <input id="findMax-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="findMax-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 <script type="text/javascript"> 
 (function(){
   var initial = "def findMax(my_array):\n" +
     "	max = my_array[0]\n" +
-    "    for i in my_array:\n" +
-    "    	if i &gt; max:\n" +
-    "        	max = i\n" +
+    "	for i in my_array:\n" +
+    "		if i &gt; max:\n" +
+    "			max = i\n" +
     "	return max\n" +
     "for i in range (len(my_array)): #distractor";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "sortable",
+    "sortableId": "findMax-sortable",
     "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
@@ -34,15 +34,15 @@ title: Multiple Parson's Problems on One Page
     "x_indent": 50,
     "lang": "en",
     "show_feedback": true,
-    "trashId": "sortableTrash"
+    "trashId": "findMax-sortableTrash"
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#newInstanceLink").click(function(event){ 
+  $("#findMax-newInstanceLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.shuffleLines(); 
   }); 
-  $("#feedbackLink").click(function(event){ 
+  $("#findMax-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
