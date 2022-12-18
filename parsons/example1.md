@@ -44,4 +44,5 @@ title: Page 2
 })(); 
 </script>
 
+[Previous](../index.markdown)
 [Next](./example2.html)
